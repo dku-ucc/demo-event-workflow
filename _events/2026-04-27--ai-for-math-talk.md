@@ -10,7 +10,7 @@ location: "CCTE 1011"
 • Startup journey & lessons
 • Live Q&A (research, careers, entrepreneurship)
 
-![event poster](poster.jpg)
+![event poster](AI for Math Talk poster.png)
 
 **Time**：
 - 19:30-20:30
