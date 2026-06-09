@@ -1,3 +1,17 @@
-title: DKU UCC 活动演示
-description: 新文件夹自动生成博客 - 测试站点
+title: DKU UCC Event Demo
+description: Folder-based automatic blog workflow
 theme: jekyll-theme-minimal
+
+# 关键：声明 events 集合
+collections:
+  events:
+    output: true
+    permalink: /events/:name/
+
+# 设置默认布局（可选）
+defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "default"
