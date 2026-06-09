@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p class="meta">
+      📅 {{ page.date | date: "%B %d, %Y" }} |
+      📍 {{ page.location }}
+    </p>
+    <div class="content">
+      {{ content }}
+    </div>
+    <p><a href="{{ '/' | relative_url }}">← Back to Events</a></p>
+  </div>
+</body>
+</html>
