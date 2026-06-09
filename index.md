@@ -1,12 +1,14 @@
-# DKU UCC 活动列表
+# DKU UCC Events
 
-欢迎来到 DKU UCC 事件自动发布系统测试站。
+Welcome to the DKU UCC automatic event publishing system test site.
 
-{% for event in site.events %}
+{% assign sorted_events = site.events | sort: 'date' | reverse %}
+{% for event in sorted_events %}
+
 ## [{{ event.title }}]({{ event.url }})
-📅 {{ event.date | date: "%Y-%m-%d" }} | 📍 {{ event.location }}
+📅 {{ event.date | date: "%B %d, %Y" }} | 📍 {{ event.location }}
 
-{{ event.excerpt | strip_html | truncate: 100 }}
+{{ event.excerpt | strip_html | truncate: 120 }}
 
 ---
 {% endfor %}
