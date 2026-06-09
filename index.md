@@ -6,7 +6,9 @@
 ## [{{ event.title }}]({{ event.url }})
 📅 {{ event.date | date: "%B %d, %Y" }} | 📍 {{ event.location }}
 
-{{ event.content | strip_html | truncate: 150 }}
+{{ event.content | strip_html | truncate: 200 }}
+
+[Read more →]({{ event.url }})
 
 ---
 {% endfor %}
