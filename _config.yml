@@ -1,17 +1,14 @@
-title: DKU UCC Event Demo
-description: Folder-based automatic blog workflow
+title: DKU UCC Events
+description: Folder-based automatic event publicity workflow
+
 theme: jekyll-theme-minimal
 
-# 关键：声明 events 集合
-collections:
-  events:
-    output: true
-    permalink: /events/:name/
+baseurl: "/demo-event-workflow"
+url: "https://dku-ucc.github.io"
 
-# 设置默认布局（可选）
 defaults:
   - scope:
-      path: ""
-      type: "events"
+      path: "events"
     values:
-      layout: "default"
+      layout: "event"
+      type: "event"
