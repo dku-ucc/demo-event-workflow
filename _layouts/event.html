@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="event-detail">
+  <h1>{{ page.title }}</h1>
+
+  <p class="meta">
+    {% if page.date %}📅 {{ page.date | date: "%B %d, %Y" }}{% endif %}
+    {% if page.time %} | 🕒 {{ page.time }}{% endif %}
+    {% if page.location %} | 📍 {{ page.location }}{% endif %}
+  </p>
+
+  {% if page.poster %}
+    <img class="poster" src="{{ page.poster }}" alt="{{ page.title }} poster">
+  {% endif %}
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  <p><a href="{{ '/' | relative_url }}">← Back to Events</a></p>
+</article>
